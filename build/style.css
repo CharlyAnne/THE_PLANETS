@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../img/stars-1655504.jpg");
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+.sun {
+  background-image: url("../img/sun.png");
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  position: absolute;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  box-shadow: -4px -2px 50px #f9cd6f;
+  transform: translate(-50px, -50px);
+}
+.mercury {
+}
