@@ -20,4 +20,14 @@ body {
   transform: translate(-50px, -50px);
 }
 .mercury {
+  height: 20px;
+  width: 20px;
+  background: #a94c2b;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: -4px 2px 56px #f9c05f;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  animation: orbit2 2s linear infinite;
 }

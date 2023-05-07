@@ -1,4 +1,6 @@
 # The SOLAR SYSTEM
-### This repository will contain codes used to create a beautiful illustration of the solar system with just HTML and CSS.
+### This repository will contain codes used to create a beautiful illustration of the solar system.
 
-pictoral illustrations gotten from www.pixabay.com
+- HTML5
+- CSS.
+- pictoral illustrations gotten from www.pixabay.com
