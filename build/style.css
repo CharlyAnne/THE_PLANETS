@@ -1,41 +1,39 @@
 * {
   box-sizing: border-box;
+  margin: 0%;
 }
 body {
-  background-image: url("../img/stars-1655504.jpg");
+  background-image: url("../img/hd-wallpaper-2695569.jpg");
   background-size: 100%;
   margin: 0;
   padding: 0;
 }
 .sun {
-  background-image: url("../img/sun.png");
-  height: 140px;
-  width: 140px;
+  margin: 0;
+  padding: 0%;
   border-radius: 50%;
+  display: inline-block;
+}
+.sun img {
   position: absolute;
-  background-size: cover;
+  height: 150px;
+  width: 150px;
   top: 50%;
   left: 50%;
-  box-shadow: -4px -2px 50px #f9cd6f;
+  border-radius: 50%;
+  box-shadow: -4px 2px 40px #f9c05f;
   transform: translate(-50px, -50px);
 }
-p {
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  position: absolute;
-  left: -62px;
-  top: -11px;
-}
 .mercury {
+  background-image: url(../img/mercury.png);
+  background-size: cover;
   height: 30px;
   width: 30px;
-  background: #a94c2b;
-  border-radius: 50%;
   position: absolute;
-  box-shadow: -4px 2px 56px #f9c05f;
   left: 43%;
   top: 42%;
+  border-radius: 50%;
+  box-shadow: -2px 1px 10px #666055;
   transform: translate(-50%, -50%);
   animation: orbit 4s linear infinite;
 }
@@ -46,4 +44,46 @@ p {
   to {
     transform: rotate(360deg) translateX(70px) rotate(-360deg);
   }
+}
+.mercury-line {
+  height: 150px;
+  width: 150px;
+}
+.mercury-line,
+.venus-line,
+.earth-line,
+.mars-line,
+.jupiter-line,
+.saturn-line,
+.uranus-line,
+.neptune-line,
+.pluto-line {
+  border-radius: 50%;
+  border: 2px dotted #ddd8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  left: -60px;
+  top: -10px;
+}
+
+.venus {
+  background-image: url(../img/venus-7292552_1280.jpg);
+  background-size: 100%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: -4px 2px 56px #c1aa81;
+  left: 40%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  animation: orbit3 10s linear infinite;
 }
