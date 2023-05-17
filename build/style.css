@@ -45,10 +45,6 @@ body {
     transform: rotate(360deg) translateX(70px) rotate(-360deg);
   }
 }
-.mercury-line {
-  height: 150px;
-  width: 150px;
-}
 .mercury-line,
 .venus-line,
 .earth-line,
@@ -64,6 +60,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.mercury-line {
+  height: 150px;
+  width: 150px;
 }
 p {
   color: white;
