@@ -43,7 +43,7 @@ p {
   border-radius: 50%;
   box-shadow: -2px 1px 10px #666055;
   transform: translate(-50%, -50%);
-  animation: orbit 4s linear infinite;
+  animation: orbit 6s linear infinite;
 }
 @keyframes orbit {
   from {
@@ -74,15 +74,26 @@ p {
   width: 150px;
 }
 .venus {
-  background-image: url(../img/venus-7292552_1280.jpg);
+  background-image: url(../img/venus.png);
   background-size: 100%;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  box-shadow: -4px 2px 56px #c1aa81;
   left: 40%;
   top: 42%;
   transform: translate(-50%, -50%);
-  animation: orbit3 10s linear infinite;
+  animation: orbit2 10s linear infinite;
+}
+@keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+.venus-line {
+  height: 200px;
+  width: 220px;
 }
