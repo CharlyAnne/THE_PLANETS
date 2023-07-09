@@ -3,15 +3,15 @@
   margin: 0%;
 }
 body {
-  background-image: url("../img/hd-wallpaper-2695569.jpg");
+  background-image: url('../img/hd-wallpaper-2695569.jpg');
   background-size: 100%;
   margin: 0;
   padding: 0;
 }
 p {
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: absolute;
   left: -60px;
   top: -10px;
@@ -24,13 +24,15 @@ p {
 }
 .sun img {
   position: absolute;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   top: 50%;
   left: 50%;
   border-radius: 50%;
   box-shadow: -4px 2px 40px #f9c05f;
   transform: translate(-50px, -50px);
+
+  z-index: -10;
 }
 .mercury {
   background-image: url(../img/mercury.png);
@@ -43,7 +45,7 @@ p {
   border-radius: 50%;
   box-shadow: -2px 1px 10px #666055;
   transform: translate(-50%, -50%);
-  animation: orbit 6s linear infinite;
+  animation: orbit 8s linear infinite;
 }
 @keyframes orbit {
   from {
@@ -67,18 +69,18 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -50%);
 }
 .mercury-line {
-  height: 150px;
+  height: 80px;
   width: 150px;
 }
 .venus {
   background-image: url(../img/venus.png);
   background-size: 100%;
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   left: 40%;
   top: 42%;
@@ -94,6 +96,44 @@ p {
   }
 }
 .venus-line {
+  height: 100px;
+  width: 180px;
+}
+.earth {
+  background-image: url(../img/earth.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  left: 40%;
+  top: 40%;
+  box-shadow: -2px 2px 10px #45423b;
+  transform: translate(-50%, -50%);
+  animation: orbit3 12s linear infinite;
+}
+@keyframes orbit3 {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+.earth-line {
   height: 200px;
-  width: 220px;
+  width: 250px;
+}
+.mars {
+  background-image: url(../img/mars.png);
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  left: 40%;
+  top: 40%;
+  box-shadow: -2px 2px 10px #45423b;
+  transform: translate(-50%, -50%);
+  animation: orbit3 12s linear infinite;
 }
