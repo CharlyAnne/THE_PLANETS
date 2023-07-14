@@ -3,4 +3,4 @@
 
 - HTML5
 - CSS.
-- pictoral illustrations gotten from www.pixabay.com
+- images gotten from www.pixabay.com
